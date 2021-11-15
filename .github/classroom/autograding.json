@@ -3,7 +3,7 @@
     {
       "name": "Exercise 1 - Smith-Waterman Algorithm: item a",
       "setup": "sudo -H pip3 install pytest --quiet",
-      "run": "pytest -s ./tests/test_exercise_sheet4.py -k '1a' > tmp",
+      "run": "pytest -s ./tests/test_exercise_sheet5.py -k '1a' > tmp",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -13,7 +13,7 @@
     {
       "name": "Exercise 1 - Smith-Waterman Algorithm: item b",
       "setup": "",
-      "run": "pytest -s ./tests/test_exercise_sheet4.py -k '1b' > tmp",
+      "run": "pytest -s ./tests/test_exercise_sheet5.py -k '1b' > tmp",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -23,7 +23,7 @@
     {
       "name": "Exercise 2 - Smith-Waterman algorithm with arbitrary gap costs: item a",
       "setup": "",
-      "run": "pytest -s ./tests/test_exercise_sheet4.py -k '2a' > tmp",
+      "run": "pytest -s ./tests/test_exercise_sheet5.py -k '2a' > tmp",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -33,7 +33,7 @@
     {
       "name": "Exercise 2 - Smith-Waterman algorithm with arbitrary gap costs: item b",
       "setup": "",
-      "run": "pytest -s ./tests/test_exercise_sheet4.py -k '2b' > tmp",
+      "run": "pytest -s ./tests/test_exercise_sheet5.py -k '2b' > tmp",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -43,7 +43,7 @@
     {
       "name": "Exercise 3 - Normalized local alignment: item a",
       "setup": "",
-      "run": "pytest -s ./tests/test_exercise_sheet4.py -k '3a' > tmp",
+      "run": "pytest -s ./tests/test_exercise_sheet5.py -k '3a' > tmp",
       "input": "",
       "output": "",
       "comparison": "included",
