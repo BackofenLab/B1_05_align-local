@@ -15,10 +15,11 @@ Course ILIAS: [web page link](https://ilias.uni-freiburg.de/ilias.php?ref_id=233
 Consider the following sequences sequences S<sub>1<sub> and S<sub>2<sub>, as similarity scoring via s(x,y), the linear gap cost g(k) = -k.
 
 <p align="center">
-<img src="./figures/exercise1_scoring.svg" alt="scoring" width=30%/>
+<img src="./figures/exercise1_scoring.svg" alt="scoring" width=70%/>
  </p>
 
 **a)** Compute the local alignment matrix S<sub>ij</sub> for the given sequence.
+ 
 **b)** Give all optimal local alignments and the according score.
 
 ### _Exercise 2 -  Smith-Waterman algorithm with arbitrary gap costs_
