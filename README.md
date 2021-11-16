@@ -19,6 +19,15 @@ Consider the following sequences sequences S<sub>1</sub> and S<sub>2</sub>, as s
  </p>
 
 **a)** Compute the local alignment matrix S<sub>ij</sub> for the given sequence.
+
+| S<sub>ij</sub>|   | T  | A  | C  | G  | C  | A  | G  | A   |
+|---------------|---|----|----|----|----|----|----|----|-----|
+|               | 0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |   0 |
+| **T**         | 0 |    |    |    |    |    |    |    |     |
+| **C**         | 0 |    |    |    |    |    |    |    |     |
+| **C**         | 0 |    |    |    |    |    |    |    |     |
+| **G**         | 0 |    |    |    |    |    |    |    |     |
+| **A**         | 0 |    |    |    |    |    |    |    |     |
  
 **b)** Give all optimal local alignments and the according score.
 
