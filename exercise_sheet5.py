@@ -20,10 +20,18 @@ def exercise_1a():
 
     return s_ij
 
-def exercise_1b():
+
+def exercise_1b() -> Tuple[List[Tuple[str, str]], int]:
     """
     Exercise 1 b
+    Give all optimal local alignments and their score
     """
+    score: int = None
+    alignments: List[Tuple[str, str]] = [
+        ("", "")
+    ]
+    return alignments, score
+
 
 def exercise_2a():
     """
