@@ -45,9 +45,21 @@ def test_exercise_1a():
     ]
     assert s_ij == expected_s_ij
 
+
 def test_exercise_1b():
     """
     """
+    alignments, score = exercise_1b()
+
+    expected_alignments = [
+        ("TCCG", "TACG"),
+        ("TCCGA", "TACGC"),
+        ("TCCG-A", "TACGCA"),
+        ("CCGA", "CAGA")
+    ]
+    expected_sore = 3
+    assert expected_sore == score
+    assert set(expected_alignments) == set(alignments)
 
 
 def test_exercise_2a():
