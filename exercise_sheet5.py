@@ -54,10 +54,10 @@ def exercise_3a():
 ########################################################
 
 
-def zero_init(seq1, seq2):
+def sw_init(seq1, seq2):
     """
     Exercise 4 a
-    Implement the function zero_init() which takes two sequences S1 and S2 and
+    Implement the function sw_init() which takes two sequences S1 and S2 and
     creates the Smith-Waterman matrix and initiates all the matrix values
     with zeroes. Hereby S1 should be represented by the rows and S2 by
     the columns.

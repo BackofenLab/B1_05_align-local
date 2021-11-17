@@ -38,7 +38,7 @@ Consider the following sequences sequences S<sub>1</sub> and S<sub>2</sub>, as s
 
 
 ### _Exercise 4 - Programming assignment: Implementation of Smith-Waterman algorithm_
-**a)** Implement the function zero_init() which takes two sequences S1 and S2 and creates the Smith-Waterman matrix and initiates all the matrix values with zeroes. Hereby S1 should be represented by the rows and S2 by the columns.
+**a)** Implement the function sw_init() which takes two sequences S1 and S2 and creates the Smith-Waterman matrix and initiates all the matrix values with zeroes. Hereby S1 should be represented by the rows and S2 by the columns.
 
 **b)** Implement the function sw_forward() which takes the two sequences S1 and S2 and the scoring function and output the complete matrix filled with the Smith-Waterman approach.
 
