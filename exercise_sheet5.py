@@ -94,7 +94,7 @@ def previous_cells(
 
 
 def build_all_traceback_paths(
-    seq1, seq2, scoring, nw_matrix
+    seq1, seq2, scoring, sw_matrix
 ) -> List[List[Tuple[int, int]]]:
     """
     Exercise 4 d
