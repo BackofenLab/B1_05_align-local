@@ -36,12 +36,56 @@ def exercise_1b() -> Tuple[List[Tuple[str, str]], int]:
 def exercise_2a():
     """
     Exercise 2 a
+
+    Which of these statements are correct?
+    Set the correct answers to True and the others to False:
     """
+
+    # Distance and similarity scores are equally useful for local alignment scoring
+    a = None
+
+    # Similarity scores are not suited for local alignment scoring
+    b = None
+
+    # Distance scores are not suited for local alignment scoring
+    c = None
+
+    return a, b, c
 
 def exercise_2b():
     """
     Exercise 2 b
+
+    The following recursions were created analogously to the Waterman-Smith-Beyer algorithm.
+    Which of these (if any) represents a variant of the Smith-Waterman algorithm that allows for an arbitrary gap scoring function?
+
+    Set the correct answers to True and the others to False:
     """
+
+    i   = None
+    ii  = None
+    iii = None
+    iv  = None
+    v   = None
+
+    return i, ii, iii, iv, v
+
+def exercise_2c():
+    """
+    Exercise 2 c
+
+    The following recursions were created analogously to the Gotoh algorithm.
+    Which of these (if any) represents a variant of the Smith-Waterman algorithm that allows for an affine gap scoring function?
+
+    Set the correct answers to True and the others to False:
+    """
+
+    i   = None
+    ii  = None
+    iii = None
+    iv  = None
+
+    return i, ii, iii, iv
 
 def exercise_3a():
     """

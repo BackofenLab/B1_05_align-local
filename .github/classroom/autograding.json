@@ -41,6 +41,16 @@
       "points": 4
     },
     {
+      "name": "Exercise 2 - Smith-Waterman algorithm with arbitrary gap costs: item c",
+      "setup": "",
+      "run": "pytest -s ./tests/test_exercise_sheet5.py -k '2c' > tmp",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 4
+    },
+    {
       "name": "Exercise 3 - Normalized local alignment: item a",
       "setup": "",
       "run": "pytest -s ./tests/test_exercise_sheet5.py -k '3a' > tmp",
@@ -49,6 +59,56 @@
       "comparison": "included",
       "timeout": 10,
       "points": 3
+    },
+    {
+      "name": "Exercise 4 - programming assignment: item a",
+      "setup": "",
+      "run": "pytest -s --no-header --tb=no -rN -x ./tests/test_exercise_sheet5.py -k '4a'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Exercise 4 - programming assignment: item b",
+      "setup": "",
+      "run": "pytest -s --no-header --tb=no -rN -x ./tests/test_exercise_sheet5.py -k '4b'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Exercise 4 - programming assignment: item c",
+      "setup": "",
+      "run": "pytest -s --no-header --tb=no -rN -x ./tests/test_exercise_sheet5.py -k '4c'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Exercise 4 - programming assignment: item d",
+      "setup": "",
+      "run": "pytest -s --no-header --tb=no -rN -x ./tests/test_exercise_sheet5.py -k '4d'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Exercise 4 - programming assignment: item e",
+      "setup": "",
+      "run": "pytest -s --no-header --tb=no -rN -x ./tests/test_exercise_sheet5.py -k '4e'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
     }
   ]
 }

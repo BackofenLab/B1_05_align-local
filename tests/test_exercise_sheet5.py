@@ -62,15 +62,33 @@ def test_exercise_1b():
 
 
 def test_exercise_2a():
-    """
-    """
+    a, b, c = exercise_2a()
 
+    assert a is False
+    assert b is False
+    assert c is True
 
 def test_exercise_2b():
     """
     """
+    i, ii, iii, iv, v = exercise_2b()
 
+    assert i is False
+    assert ii is True
+    assert iii is False
+    assert iv is False
+    assert v is False
 
+def test_exercise_2c():
+    """
+    """
+    i, ii, iii, iv = exercise_2c()
+
+    assert i is True
+    assert ii is False
+    assert iii is False
+    assert iv is False
+s
 def test_exercise_3a():
     """
     """

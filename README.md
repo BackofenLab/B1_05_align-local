@@ -28,10 +28,31 @@ Consider the following sequences S<sub>1</sub> and S<sub>2</sub>, as similarity 
 | **C**         | 0 |    |    |    |    |    |    |    |     |
 | **G**         | 0 |    |    |    |    |    |    |    |     |
 | **A**         | 0 |    |    |    |    |    |    |    |     |
- 
+
 **b)** Give all optimal local alignments and the according score.
 
 ### _Exercise 2 -  Smith-Waterman algorithm with arbitrary gap costs_
+
+**a)** Which of these statements are correct?
+
+ - [ ] Distance and similarity scores are equally useful for local alignment scoring
+ - [ ] Similarity scores are not suited for local alignment scoring
+ - [ ] Distance scores are not suited for local alignment scoring
+
+
+You want to extend the Smith-Waterman algorithm for local alignment to more general gap scoring functions g(k) (where k denotes the gap length).
+
+**b)** The following recursions were created analogously to the Waterman-Smith-Beyer algorithm. Which of these (if any) represents a variant of the Smith-Waterman algorithm that allows for an arbitrary gap scoring function?
+
+<p align="center">
+<img src="./figures/exercise2_wsb.svg" alt="scoring" width=70%/>
+ </p>
+
+**c)** The following recursions were created analogously to the Gotoh algorithm. Which of these (if any) represents a variant of the Smith-Waterman algorithm that allows for an affine gap scoring function?
+
+<p align="center">
+<img src="./figures/exercise2_gotoh.svg" alt="scoring" width=70%/>
+ </p>
 
 
 ### _Exercise 3 -  Normalized local alignment_
@@ -49,6 +70,6 @@ The function should output a list of tuples of all possible previous cells. The 
 
 **d)** Implement the function which builds all possible traceback paths. This function should return a list of possible paths which themselves are a list of tuples (row, column). The ordering must be decreasing. Meaning paths should start in the lower right corner of the matrix.
 
-**e)** Implement the function build_alignment() which takes two sequences and a path as a list of tuples. This function should return a local alignment tuple. Meaning two substrings with introduced gaps. 
+**e)** Implement the function build_alignment() which takes two sequences and a path as a list of tuples. This function should return a local alignment tuple. Meaning two substrings with introduced gaps.
 
 ---
