@@ -69,6 +69,10 @@ def build_all_traceback_paths_correct(seq1, seq2, scoring, sw_matrix):
 
     flat = [x for row in sw_matrix for x in row]
     max_val = max(flat)
+
+    if max_val == 0:
+        return [[]]
+
     frontier = []
 
     for row_index, row in enumerate(sw_matrix):
@@ -98,6 +102,9 @@ def build_alignment_correct(seq1, seq2, alignment_path):
     align_seq1 = ""
     align_seq2 = ""
 
+    if not alignment_path:
+        return "", ""
+
     alignment_path = alignment_path[::-1]
 
     prev_cell = alignment_path[0]
@@ -125,8 +132,8 @@ def build_alignment_correct(seq1, seq2, alignment_path):
 
 def main():
     scoring = {"match": 2, "mismatch": -1, "gap_introduction": -1}
-    s1 = "CCC"
-    s2 = "ACACCTT"
+    s1 = "ATTGC"
+    s2 = "TTT"
 
     h = sw_forward_correct(s1, s2, scoring)
 
