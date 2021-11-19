@@ -6,6 +6,8 @@ from math import inf
 def exercise_1a():
     """
     Exercise 1 a
+    Consider the following sequences S1 and S2, as similarity scoring via s(x,y), 
+    the linear gap cost g(k) = -k.
     """
 
     #        T   A   C   G   C   A   G   A
