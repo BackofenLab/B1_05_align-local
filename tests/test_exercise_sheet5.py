@@ -69,8 +69,6 @@ def test_exercise_2a():
     assert c is True
 
 def test_exercise_2b():
-    """
-    """
     i, ii, iii, iv, v = exercise_2b()
 
     assert i is False
@@ -80,19 +78,12 @@ def test_exercise_2b():
     assert v is False
 
 def test_exercise_2c():
-    """
-    """
     i, ii, iii, iv = exercise_2c()
 
     assert i is True
     assert ii is False
     assert iii is False
     assert iv is False
-s
-def test_exercise_3a():
-    """
-    """
-
 
 @pytest.mark.parametrize(
     "seq1,seq2",
@@ -109,7 +100,7 @@ def test_exercise_3a():
         (random_seq_generator(19, 1), random_seq_generator(13, 2)),
     ]
 )
-def test_exercise_4a(seq1, seq2):
+def test_exercise_3a(seq1, seq2):
     expected_matrix = sw_init_correct(seq1, seq2)
     actual_matrix = sw_init(seq1, seq2)
     if actual_matrix != expected_matrix:
@@ -140,7 +131,7 @@ def test_exercise_4a(seq1, seq2):
     "scoring",
     [scoring for scoring in SCORING]
 )
-def test_exercise_4b(seq1, seq2, scoring):
+def test_exercise_3b(seq1, seq2, scoring):
     expected_matrix = sw_forward_correct(seq1, seq2, scoring)
     actual_matrix = sw_forward(seq1, seq2, scoring)
     if actual_matrix != expected_matrix:
@@ -183,7 +174,7 @@ def test_exercise_4b(seq1, seq2, scoring):
         (3, 3),
     ]
 )
-def test_exercise_4c(seq1, seq2, scoring, cell):
+def test_exercise_3c(seq1, seq2, scoring, cell):
     sw_matrix = sw_forward_correct(seq1, seq2, scoring)
     expected_cells = previous_cells_correct(
         seq1, seq2, scoring, sw_matrix, cell
@@ -218,7 +209,7 @@ def test_exercise_4c(seq1, seq2, scoring, cell):
     "scoring",
     [scoring for scoring in SCORING]
 )
-def test_exercise_4d(seq1, seq2, scoring):
+def test_exercise_3d(seq1, seq2, scoring):
     sw_matrix = sw_forward_correct(seq1, seq2, scoring)
     expected_paths = build_all_traceback_paths_correct(
         seq1, seq2, scoring, sw_matrix
@@ -256,7 +247,7 @@ def test_exercise_4d(seq1, seq2, scoring):
     "scoring",
     [scoring for scoring in SCORING]
 )
-def test_exercise_4e(seq1, seq2, scoring):
+def test_exercise_3e(seq1, seq2, scoring):
     sw_matrix = sw_forward_correct(seq1, seq2, scoring)
     expected_paths = build_all_traceback_paths_correct(
         seq1, seq2, scoring, sw_matrix

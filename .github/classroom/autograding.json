@@ -8,7 +8,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 6
+      "points": 10
     },
     {
       "name": "Exercise 1 - Smith-Waterman Algorithm: item b",
@@ -18,7 +18,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 6
+      "points": 10
     },
     {
       "name": "Exercise 2 - Smith-Waterman algorithm with arbitrary gap costs: item a",
@@ -28,7 +28,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 4
+      "points": 6
     },
     {
       "name": "Exercise 2 - Smith-Waterman algorithm with arbitrary gap costs: item b",
@@ -38,7 +38,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 4
+      "points": 12
     },
     {
       "name": "Exercise 2 - Smith-Waterman algorithm with arbitrary gap costs: item c",
@@ -48,22 +48,12 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 4
+      "points": 12
     },
     {
-      "name": "Exercise 3 - Normalized local alignment: item a",
+      "name": "Exercise 3 - programming assignment: item a",
       "setup": "",
-      "run": "pytest -s ./tests/test_exercise_sheet5.py -k '3a' > tmp",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 3
-    },
-    {
-      "name": "Exercise 4 - programming assignment: item a",
-      "setup": "",
-      "run": "pytest -s --no-header --tb=no -rN -x ./tests/test_exercise_sheet5.py -k '4a'",
+      "run": "pytest -s --no-header --tb=no -rN -x ./tests/test_exercise_sheet5.py -k '3a'",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -71,9 +61,9 @@
       "points": 10
     },
     {
-      "name": "Exercise 4 - programming assignment: item b",
+      "name": "Exercise 3 - programming assignment: item b",
       "setup": "",
-      "run": "pytest -s --no-header --tb=no -rN -x ./tests/test_exercise_sheet5.py -k '4b'",
+      "run": "pytest -s --no-header --tb=no -rN -x ./tests/test_exercise_sheet5.py -k '3b'",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -81,9 +71,9 @@
       "points": 10
     },
     {
-      "name": "Exercise 4 - programming assignment: item c",
+      "name": "Exercise 3 - programming assignment: item c",
       "setup": "",
-      "run": "pytest -s --no-header --tb=no -rN -x ./tests/test_exercise_sheet5.py -k '4c'",
+      "run": "pytest -s --no-header --tb=no -rN -x ./tests/test_exercise_sheet5.py -k '3c'",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -91,9 +81,9 @@
       "points": 10
     },
     {
-      "name": "Exercise 4 - programming assignment: item d",
+      "name": "Exercise 3 - programming assignment: item d",
       "setup": "",
-      "run": "pytest -s --no-header --tb=no -rN -x ./tests/test_exercise_sheet5.py -k '4d'",
+      "run": "pytest -s --no-header --tb=no -rN -x ./tests/test_exercise_sheet5.py -k '3d'",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -101,9 +91,9 @@
       "points": 10
     },
     {
-      "name": "Exercise 4 - programming assignment: item e",
+      "name": "Exercise 3 - programming assignment: item e",
       "setup": "",
-      "run": "pytest -s --no-header --tb=no -rN -x ./tests/test_exercise_sheet5.py -k '4e'",
+      "run": "pytest -s --no-header --tb=no -rN -x ./tests/test_exercise_sheet5.py -k '3e'",
       "input": "",
       "output": "",
       "comparison": "included",
