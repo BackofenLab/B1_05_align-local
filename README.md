@@ -7,7 +7,7 @@ Course ILIAS: [web page link](https://ilias.uni-freiburg.de/ilias.php?ref_id=233
 ---
 ## Bioinformatics 1
 ###### WS 2021/2022
-##### Exercise sheet 5: Sequence Alignment
+##### Exercise sheet 5: Local Sequence Alignment
 ---
 
 ### _Exercise 1 -  Smith-Waterman_
