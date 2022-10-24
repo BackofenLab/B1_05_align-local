@@ -2,58 +2,11 @@ Albert-Ludwigs-Universität Freiburg
 
 Lehrstuhl für Bioinformatik - Institut für Informatik - *http://www.bioinf.uni-freiburg.de*
 
-Course ILIAS: [web page link](https://ilias.uni-freiburg.de/ilias.php?ref_id=2339316&cmdClass=ilobjcoursegui&cmd=view&cmdNode=zf:ns&baseClass=ilRepositoryGUI)
 
 ---
 ## Bioinformatics 1
-###### WS 2021/2022
 ##### Exercise sheet 5: Local Sequence Alignment
 ---
-
-### _Exercise 1 -  Smith-Waterman_
-
-Consider the following sequences S<sub>1</sub> and S<sub>2</sub>, as similarity scoring via s(x,y), the linear gap cost g(k) = -k.
-
-<p align="center">
-<img src="./figures/exercise1_scoring.svg" alt="scoring" width=70%/>
- </p>
-
-**a)** Compute the local alignment matrix S<sub>ij</sub> for the given sequence.
-
-| S<sub>ij</sub>|   | T  | A  | C  | G  | C  | A  | G  | A   |
-|---------------|---|----|----|----|----|----|----|----|-----|
-|               | 0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |   0 |
-| **T**         | 0 |    |    |    |    |    |    |    |     |
-| **C**         | 0 |    |    |    |    |    |    |    |     |
-| **C**         | 0 |    |    |    |    |    |    |    |     |
-| **G**         | 0 |    |    |    |    |    |    |    |     |
-| **A**         | 0 |    |    |    |    |    |    |    |     |
-
-**b)** Give all optimal local alignments and the according score.
-
-### _Exercise 2 -  Smith-Waterman algorithm with arbitrary gap costs_
-
-**a)** Which of these statements are correct?
-
- - [ ] Distance and similarity scores are equally useful for local alignment scoring
- - [ ] Similarity scores are not suited for local alignment scoring
- - [ ] Distance scores are not suited for local alignment scoring
-
-
-You want to extend the Smith-Waterman algorithm for local alignment to more general gap scoring functions g(k) (where k denotes the gap length).
-
-**b)** The following recursions were created analogously to the Waterman-Smith-Beyer algorithm. Which of these (if any) represents a variant of the Smith-Waterman algorithm that allows for an arbitrary gap scoring function?
-
-<p align="center">
-<img src="./figures/exercise2_wsb.svg" alt="scoring" width=70%/>
- </p>
-
-**c)** The following recursions were created analogously to the Gotoh algorithm. Which of these (if any) represents a variant of the Smith-Waterman algorithm that allows for an affine gap scoring function?
-
-<p align="center">
-<img src="./figures/exercise2_gotoh.svg" alt="scoring" width=70%/>
- </p>
-
 
 ### _Exercise 3 - Programming assignment: Implementation of Smith-Waterman algorithm_
 **a)** Implement the function sw_init() which takes two sequences S1 and S2 and creates the Smith-Waterman matrix and initiates all the matrix values with zeroes. Hereby S1 should be represented by the rows and S2 by the columns.

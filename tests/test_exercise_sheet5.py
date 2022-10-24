@@ -20,10 +20,12 @@ def random_seq_generator(length, random_seed):
         [random.choice(["A", "T", "C", "G"]) for _ in range(length)]
     )
 
+
 def check_none(*args):
     if None in args:
         print("you have not filled in all the fields")
         raise ValueError
+
 
 def check_zero_in_dict(d):
     val = d.values()
@@ -31,59 +33,6 @@ def check_zero_in_dict(d):
         print("you have not filled in all the fields")
         raise ValueError
 
-def test_exercise_1a():
-    s_ij = exercise_1a()
-    #        T   A   C   G   C   A   G   A
-    expected_s_ij = [
-        [0,  0,  0,  0,  0,  0,  0,  0,  0],
-        [0,  1,  0,  0,  0,  0,  0,  0,  0],  # T
-        [0,  0,  1,  1,  0,  1,  0,  0,  0],  # C
-        [0,  0,  0,  2,  1,  1,  1,  0,  0],  # C
-        [0,  0,  0,  1,  3,  2,  1,  2,  1],  # G
-        [0,  0,  1,  0,  2,  3,  3,  2,  3],  # A
-    ]
-    assert s_ij == expected_s_ij
-
-
-def test_exercise_1b():
-    """
-    """
-    alignments, score = exercise_1b()
-
-    expected_alignments = [
-        ("TCCG", "TACG"),
-        ("TCCGA", "TACGC"),
-        ("TCCG-A", "TACGCA"),
-        ("CCGA", "CAGA")
-    ]
-    expected_sore = 3
-    assert expected_sore == score
-    assert set(expected_alignments) == set(alignments)
-
-
-def test_exercise_2a():
-    a, b, c = exercise_2a()
-
-    assert a is False
-    assert b is False
-    assert c is True
-
-def test_exercise_2b():
-    i, ii, iii, iv, v = exercise_2b()
-
-    assert i is False
-    assert ii is True
-    assert iii is False
-    assert iv is False
-    assert v is False
-
-def test_exercise_2c():
-    i, ii, iii, iv = exercise_2c()
-
-    assert i is True
-    assert ii is False
-    assert iii is False
-    assert iv is False
 
 @pytest.mark.parametrize(
     "seq1,seq2",
