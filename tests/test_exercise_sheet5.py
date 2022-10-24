@@ -145,7 +145,6 @@ def test_exercise_3c(seq1, seq2, scoring, cell):
         ("TCCGA", "TACGCGC", ),
         ("TCCCGG", "TCAAA",),
         ("TCCGA", "TACGCGC", ),
-        ("AAA", "TTT", ),
         ("TACGCAGA", "TCCGA", ),
     ] + [
         (random_seq_generator(10, 1), random_seq_generator(10, 2)),
